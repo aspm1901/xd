@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #111110;
-  background-image: url("/FOTITOS/patron.png");
+  background-image: url("FOTITOS/patron.png");
   color: #ffffff;
 }
 
