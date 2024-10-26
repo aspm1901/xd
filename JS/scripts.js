@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <div class="header-logo">
-        <img src="FOTITOS/logo.png" alt="GameVerse Logo" class="logo" />
+        <img src="../FOTITOS/logo.png" alt="GameVerse Logo" class="logo" />
         <h1>GameVerse</h1>
       </div>
       <nav>
