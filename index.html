@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./CSS/style1.css" />
+    <link rel="stylesheet" href="CSS/style1.css" />
     <title>GameVerse - Tu mundo de juegos</title>
     <script
       crossorigin
@@ -20,8 +20,8 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="text/babel" src="./JS/script.card.js"></script>
-    <script type="text/babel" src="./JS/scripts.js"></script>
+    <script type="text/babel" src="JS/script.card.js"></script>
+    <script type="text/babel" src="JS/scripts.js"></script>
     <script type="text/babel">
       class App extends React.Component {
         constructor(props) {
@@ -32,7 +32,7 @@
         }
 
         componentDidMount() {
-          fetch("./JS/data.fotos.json")
+          fetch("JS/data.fotos.json")
             .then((response) => response.json())
             .then((data) => {
               this.setState({ cardsData: data });
