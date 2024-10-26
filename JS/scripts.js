@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <div class="header-logo">
-        <img src="../FOTITOS/logo.png" alt="GameVerse Logo" class="logo" />
+        <img src="FOTITOS/logo.png" alt="GameVerse Logo" class="logo" />
         <h1>GameVerse</h1>
       </div>
       <nav>
@@ -62,7 +62,7 @@ const ProductButton = () => {
 const Footer = () => {
   return (
     <footer>
-      <a href="../contacto.html" target="_top">
+      <a href="contacto.html" target="_top">
         ¡Contáctanos!
       </a>
       <address>Nuestra dirección es: Madre de Dios 371 - La Molina</address>
@@ -75,7 +75,7 @@ const Footer = () => {
 const Form = () => (
   <div class="contact-container">
     <div class="image-section">
-      <img src="../FOTITOS/imagencuadro.png" alt="mandos" />
+      <img src="FOTITOS/imagencuadro.png" alt="mandos" />
     </div>
     <div class="form-section">
       <h2>Contáctanos</h2>
