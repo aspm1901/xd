@@ -18,8 +18,8 @@
       src="https://unpkg.com/@babel/standalone/babel.min.js"
     ></script>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="min-h-screen flex flex-col">
+    <div id="root" class="flex-grow"></div>
     <script type="text/babel" src="JS/script.card.js"></script>
     <script type="text/babel" src="JS/scripts.js"></script>
     <script type="text/babel">
@@ -42,12 +42,13 @@
 
         render() {
           return (
-            <div>
+            <div className="flex flex-col min-h-screen">
               <Header />
               <MainContent />
               <FotosList cardsData={this.state.cardsData} />
               <ProductButton />
               <Footer />
+              <div className="flex-grow"></div>
             </div>
           );
         }
@@ -56,5 +57,6 @@
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(<App />);
     </script>
+    |
   </body>
 </html>

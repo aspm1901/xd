@@ -34,7 +34,11 @@ const MainContent = () => {
           className="imagenprincipal"
         />
         <h2>
-          <a href="#" style={{ color: "#9f5ea0" }}>
+          <a
+            href="#"
+            style={{ color: "#9f5ea0" }}
+            className="w-full p-2 border border-grey-300 rounded"
+          >
             Acerca de nosotros
           </a>
         </h2>
@@ -45,7 +49,16 @@ const MainContent = () => {
         </p>
       </section>
       <section id="products">
-        <h2 style={{ color: "#9f5ea0" }}>Productos destacados</h2>
+        <h2>
+          <a
+            href="#"
+            style={{ color: "#9f5ea0" }}
+            className="w-full p-2 border border-grey-300 rounded"
+          >
+            Productos destacados
+          </a>
+          <br />
+        </h2>
       </section>
     </div>
   );
@@ -54,7 +67,7 @@ const MainContent = () => {
 const ProductButton = () => {
   return (
     <div className="todos-productos">
-      <a href="#">Ver todos nuestros productos</a>
+      <a href="prod.html">Ver todos nuestros productos</a>
     </div>
   );
 };
@@ -79,22 +92,40 @@ const Form = () => (
     </div>
     <div class="form-section">
       <h2>Contáctanos</h2>
-      <form>
+      <form className="p-6 bg-white shadow-md rounded-lg space-y-4">
         <input
           type="text"
           name="name"
           placeholder="Nombres y apellidos"
           required
+          className="w-full p-2 border border-gray-300 rounded"
         />
         <input
           type="email"
           name="email"
           placeholder="Correo electrónico"
           required
+          className="w-full p-2 border border-gray-300 rounded"
         />
-        <input type="tel" placeholder="Número telefónico" required />
-        <textarea name="message" placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
+        <input
+          type="tel"
+          placeholder="Número telefónico"
+          required
+          className="w-full p-2 border border-gray-300 rounded"
+        />
+        <textarea
+          name="message"
+          placeholder="Mensaje"
+          required
+          className="w-full p-2 border border-gray-300 rounded"
+        ></textarea>
+        <button
+          type="submit"
+          className="w-full p-2 border border-gray-300 rounded"
+        >
+          {" "}
+          Enviar{" "}
+        </button>
       </form>
     </div>
   </div>
